@@ -1,0 +1,6 @@
+sqlite3
+.open authenticator.db 
+create table users(id integer primary key autoincrement, username varchar(30), password varchar(30));
+.tables
+insert into users (username,password) values ('akhil','pass1');
+select * from users;
